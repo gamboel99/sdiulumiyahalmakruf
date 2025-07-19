@@ -1,127 +1,77 @@
-/* Reset dan font */
+/* ========================
+   Islamic Background Pattern Only (non-intrusive)
+   ======================== */
 body {
-  margin: 0;
-  font-family: 'Reem Kufi Fun', sans-serif;
-  background: #f5fff5;
-  color: #003300;
+  background-color: #f7fff7;
+  background-image:
+    radial-gradient(circle at 10px 10px, rgba(204, 229, 204, 0.4) 1px, transparent 0),
+    radial-gradient(circle at 30px 30px, rgba(204, 229, 204, 0.4) 1px, transparent 0);
+  background-size: 40px 40px;
 }
 
-a {
-  text-decoration: none;
+/* Footer Restore - Keep previous layout */
+footer {
+  background-color: #004d00;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
 }
 
-/* Header dan Logo */
-.header {
-  background-color: #007f5f;
-  padding: 1rem 2rem;
-  color: white;
-}
-
-.logo-container {
+footer .footer-content {
   display: flex;
-  align-items: center;
-  gap: 1rem;
-}
-
-.logo {
-  height: 60px;
-}
-
-.title {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-/* Navigasi */
-.nav {
-  display: flex;
-  gap: 1.2rem;
-  margin-top: 1rem;
   flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.nav a {
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 220px;
 }
 
-.nav a:hover {
-  color: #ffcc00;
-}
-
-/* Hero */
-.hero {
-  background: repeating-linear-gradient(
-    45deg,
-    #e9ffe9,
-    #e9ffe9 20px,
-    #ffffff 20px,
-    #ffffff 40px
-  );
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  color: #006644;
-}
-
-.hero p {
+.footer-section h4 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
   font-size: 1.1rem;
-  color: #444;
-  margin-top: 0.5rem;
-}
-
-/* Program Kegiatan */
-.program {
-  padding: 2rem;
-  text-align: center;
-}
-
-.program-link {
+  border-bottom: 2px solid #fff;
   display: inline-block;
-  margin-top: 1rem;
-  background-color: #007f5f;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
+  padding-bottom: 0.4rem;
 }
 
-.program-link:hover {
-  background-color: #005f44;
+.footer-section p,
+.footer-section a {
+  color: #eee;
+  text-decoration: none;
+  line-height: 1.6;
 }
 
-/* Slider */
-.slider {
-  display: flex;
-  overflow: hidden;
-  height: 300px;
-  position: relative;
-  margin: 2rem auto;
-  max-width: 90%;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+.footer-section a:hover {
+  text-decoration: underline;
 }
 
-.slider img {
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-/* Footer */
-.footer {
-  background-color: #004d3d;
-  color: white;
+.footer-bottom {
   text-align: center;
-  padding: 1rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
   font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.footer-bottom .credit {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+/* Social Media */
+.footer-socials a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #ffa500;
+}
+
+.footer-socials a:hover {
+  color: #ffcc00;
 }
