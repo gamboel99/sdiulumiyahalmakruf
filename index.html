@@ -2,52 +2,79 @@
 <html lang="id">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>SDI Ulumiyah Al-Makruf</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beranda | SDI Ulumiyah Al-Makruf</title>
+  <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Scheherazade+New&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  <header class="header-islamic">
-    <div class="logo-container">
-      <img src="logo.png" alt="Logo SDI Ulumiyah" class="logo">
-      <div class="title">
-        <h1>SDI Ulumiyah Al-Makruf</h1>
-        <p>Membangun Generasi Qurani, Cerdas, dan Berakhlak</p>
-      </div>
+  <header>
+    <div class="header-pattern">
+      <h1>SDI Ulumiyah Al-Makruf</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Beranda</a></li>
+          <li><a href="#">Tentang Kami</a></li>
+          <li><a href="#">E-learning</a></li>
+          <li><a href="#">Hasil Belajar</a></li>
+          <li><a href="#">Galeri</a></li>
+          <li><a href="#">Kontak</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav class="nav-menu">
-      <a href="#">Beranda</a>
-      <a href="#">Profil</a>
-      <a href="#">Struktur</a>
-      <a href="#">Kegiatan</a>
-      <a href="#">Galeri</a>
-      <a href="#">PPDB</a>
-      <a href="#">Kontak</a>
-    </nav>
   </header>
 
-  <main class="main-pattern">
+  <main>
     <section class="hero">
-      <div class="welcome-box">
-        <h2>Selamat Datang di Website Resmi</h2>
-        <h3>SDI Ulumiyah Al-Makruf</h3>
-        <p>Sekolah Islam unggulan yang membentuk generasi Qurani, berprestasi, dan berakhlak mulia.</p>
+      <h2>Selamat Datang di SDI Ulumiyah Al-Makruf</h2>
+      <p>Membangun generasi Qurani, cerdas, dan berakhlakul karimah</p>
+    </section>
+
+    <section class="program-tahunan">
+      <h2>Agenda Kegiatan SDI Tahun 2025/2026</h2>
+      <ul>
+        <li>Penerimaan Peserta Didik Baru (PPDB)</li>
+        <li>Pesantren Ramadhan & Khotmil Qur’an</li>
+        <li>Lomba Hari Besar Islam & Nasional</li>
+        <li>Kegiatan Ekstrakurikuler & Field Trip</li>
+        <li>Ujian Tengah & Akhir Semester</li>
+        <li>Pentas Seni dan Karya Siswa</li>
+      </ul>
+    </section>
+
+    <section class="slider">
+      <div class="slides">
+        <img src="img/slide1.jpg" alt="Profil Sekolah 1">
+        <img src="img/slide2.jpg" alt="Profil Sekolah 2">
+        <img src="img/slide3.jpg" alt="Profil Sekolah 3">
       </div>
     </section>
   </main>
 
-  <footer class="footer-islamic">
-    <div class="footer-content">
-      <p>Alamat: Jl. Pendidikan No. 10, Desa Keling, Kec. Kepung, Kab. Kediri</p>
-      <p>Email: info@sdiulumiyah.sch.id | Website: www.sdiulumiyah.sch.id</p>
-      <p>Media Sosial: @sdiulumiyah (IG, FB, YouTube)</p>
-      <p>Developed by <strong>CV. Mitra Utama Consultindo (MUC)</strong></p>
+  <footer>
+    <div class="footer-pattern">
+      <p>Alamat: Jl. Pendidikan No. 99, Desa Keling, Kediri</p>
+      <p>Email: info@sdialmakruf.sch.id | Telp: (0354) 123456</p>
+      <p>Website: www.sdium.sch.id</p>
+      <div class="social-media">
+        <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">YouTube</a>
+      </div>
+      <p>Developed by CV. Mitra Utama Consultindo (MUC)</p>
     </div>
   </footer>
+
+  <script>
+    let index = 0;
+    const slides = document.querySelectorAll(".slider img");
+    setInterval(() => {
+      slides.forEach((slide, i) => {
+        slide.style.display = (i === index) ? "block" : "none";
+      });
+      index = (index + 1) % slides.length;
+    }, 3000);
+  </script>
 </body>
 
 </html>
