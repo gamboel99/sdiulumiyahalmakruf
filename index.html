@@ -1,63 +1,127 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SDI Ulumiyah Al-Makruf</title>
-  <link rel="stylesheet" href="style/style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-  <!-- Header -->
-  <header class="site-header">
-    <div class="container">
-      <img src="assets/logo.png" alt="Logo SDI Ulumiyah" class="logo">
-      <h1 class="site-title">SDI Ulumiyah Al-Makruf</h1>
-      <nav class="site-nav">
-        <ul>
-          <li><a href="#">Beranda</a></li>
-          <li><a href="#tentang">Tentang Kami</a></li>
-          <li><a href="#elearning">E-learning</a></li>
-          <li><a href="#hasil">Hasil Belajar</a></li>
-          <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+/* Reset dan font */
+body {
+  margin: 0;
+  font-family: 'Reem Kufi Fun', sans-serif;
+  background: #f5fff5;
+  color: #003300;
+}
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-text">
-      <h2>Selamat Datang di SDI Ulumiyah Al-Makruf</h2>
-      <p>Membangun generasi Qurani, cerdas, dan berakhlakul karimah</p>
-    </div>
-    <div class="hero-slider">
-      <img src="images/dummy1.jpg" alt="Profil Sekolah 1">
-      <img src="images/dummy2.jpg" alt="Profil Sekolah 2">
-      <img src="images/dummy3.jpg" alt="Profil Sekolah 3">
-    </div>
-  </section>
+a {
+  text-decoration: none;
+}
 
-  <!-- Program Tahunan -->
-  <section class="program">
-    <div class="container">
-      <h3>Agenda & Kegiatan SDI Tahun 2025/2026</h3>
-      <ul>
-        <li>⦿ Penerimaan Peserta Didik Baru (PPDB)</li>
-        <li>⦿ Kegiatan Tahfidz dan Muhadhoroh Rutin</li>
-        <li>⦿ Outbound dan Field Trip Tematik</li>
-        <li>⦿ Kegiatan Maulid Nabi dan Hari Besar Islam</li>
-        <li>⦿ Penilaian Akhir Semester dan Wisuda Tahfidz</li>
-      </ul>
-    </div>
-  </section>
+/* Header dan Logo */
+.header {
+  background-color: #007f5f;
+  padding: 1rem 2rem;
+  color: white;
+}
 
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>&copy; 2025 SDI Ulumiyah Al-Makruf. Semua hak dilindungi.</p>
-    </div>
-  </footer>
-</body>
-</html>
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  height: 60px;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+/* Navigasi */
+.nav {
+  display: flex;
+  gap: 1.2rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  color: white;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ffcc00;
+}
+
+/* Hero */
+.hero {
+  background: repeating-linear-gradient(
+    45deg,
+    #e9ffe9,
+    #e9ffe9 20px,
+    #ffffff 20px,
+    #ffffff 40px
+  );
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #006644;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #444;
+  margin-top: 0.5rem;
+}
+
+/* Program Kegiatan */
+.program {
+  padding: 2rem;
+  text-align: center;
+}
+
+.program-link {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #007f5f;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.program-link:hover {
+  background-color: #005f44;
+}
+
+/* Slider */
+.slider {
+  display: flex;
+  overflow: hidden;
+  height: 300px;
+  position: relative;
+  margin: 2rem auto;
+  max-width: 90%;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.slider img {
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+/* Footer */
+.footer {
+  background-color: #004d3d;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
