@@ -1,126 +1,70 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SDI Ulumiyah Al-Makruf</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
 
-<header>
-  <div class="logo">SDI Ulumiyah Al-Makruf</div>
-  <nav>
-    <ul class="main-menu">
-      <li><a href="index.html">Beranda</a></li>
+.header {
+  background: linear-gradient(to right, #006400, #228B22);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 6px solid orange;
+}
 
-      <li class="has-sub">
-        <a href="#">Profil</a>
-        <ul class="submenu">
-          <li><a href="profil.html">Profil Sekolah</a></li>
-          <li><a href="visi-misi.html">Visi & Misi</a></li>
-          <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
-        </ul>
-      </li>
+.menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #006400;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
-      <li><a href="tentang.html">Tentang Kami</a></li>
+.menu > li {
+  position: relative;
+}
 
-      <li class="has-sub">
-        <a href="#">Materi Pembelajaran</a>
-        <ul class="submenu">
-          <li><a href="rpp.html">RPP</a></li>
-          <li><a href="atp.html">ATP</a></li>
-        </ul>
-      </li>
+.menu > li > a {
+  display: block;
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+}
 
-      <li class="has-sub">
-        <a href="#">PPDB</a>
-        <ul class="submenu">
-          <li><a href="biaya.html">Biaya</a></li>
-          <li><a href="diskon.html">Diskon</a></li>
-          <li><a href="formulir.html">Formulir</a></li>
-          <li><a href="mutasi.html">Mutasi</a></li>
-          <li><a href="syarat.html">Syarat</a></li>
-        </ul>
-      </li>
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  background-color: #2e8b57;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  z-index: 1000;
+}
 
-      <li class="has-sub">
-        <a href="#">Pojok</a>
-        <ul class="submenu">
-          <li><a href="pojok-siswa.html">Siswa</a></li>
-          <li><a href="pojok-walimurid.html">Wali Murid</a></li>
-        </ul>
-      </li>
+.menu li:hover .submenu {
+  display: block;
+}
 
-      <li class="has-sub">
-        <a href="#">Link</a>
-        <ul class="submenu">
-          <li><a href="kemendikdasmen.html">Kemendikdasmen</a></li>
-          <li><a href="kemenag.html">Kemenag</a></li>
-          <li><a href="dapodik.html">Dapodik</a></li>
-        </ul>
-      </li>
+.submenu li a {
+  padding: 0.75rem 1rem;
+  display: block;
+  color: white;
+  text-decoration: none;
+}
 
-      <li class="has-sub">
-        <a href="#">Komite</a>
-        <ul class="submenu">
-          <li><a href="program-komite.html">Program</a></li>
-        </ul>
-      </li>
+.submenu li a:hover {
+  background-color: orange;
+  color: black;
+}
 
-      <li class="has-sub">
-        <a href="#">Hasil Belajar</a>
-        <ul class="submenu">
-          <li><a href="eraport.html">E-Raport</a></li>
-          <li><a href="evaluasi.html">Evaluasi</a></li>
-          <li><a href="materi-ujian.html">Materi Ujian</a></li>
-          <li><a href="uts.html">UTS</a></li>
-          <li><a href="uas.html">UAS</a></li>
-          <li><a href="ujian-online.html">Ujian Online</a></li>
-        </ul>
-      </li>
-
-      <li class="has-sub">
-        <a href="#">Galeri</a>
-        <ul class="submenu">
-          <li><a href="galeri-kbm.html">Kegiatan Belajar Mengajar</a></li>
-          <li><a href="galeri-sekolah.html">Kegiatan Sekolah</a></li>
-        </ul>
-      </li>
-
-      <li><a href="kontak.html">Kontak</a></li>
-    </ul>
-  </nav>
-</header>
-
-<main class="container">
-  <h1>Selamat Datang di Website Resmi SDI Ulumiyah Al-Makruf</h1>
-  <p>
-    Website ini merupakan media informasi resmi bagi siswa, orang tua, dan masyarakat umum mengenai kegiatan, program, dan layanan pendidikan di SDI Ulumiyah Al-Makruf.
-  </p>
-</main>
-
-<footer>
-  <div class="footer-container">
-    <div class="footer-section">
-      <h4>Alamat</h4>
-      <p>Jl. Pendidikan No. 88, Keling, Kediri</p>
-    </div>
-    <div class="footer-section">
-      <h4>Kontak</h4>
-      <p>Telepon: (0354) 123456</p>
-      <p>Email: info@sdialmakruf.sch.id</p>
-      <p>Website: www.sdialmakruf.sch.id</p>
-    </div>
-    <div class="footer-section">
-      <h4>Media Sosial</h4>
-      <p>Facebook | Instagram | YouTube</p>
-    </div>
-    <div class="footer-section developer">
-      <p>Developed by <strong>CV. Mitra Utama Consultindo</strong></p>
-    </div>
-  </div>
-</footer>
-
-</body>
-</html>
+.footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
