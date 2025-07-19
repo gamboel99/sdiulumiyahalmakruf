@@ -1,127 +1,49 @@
-/* Reset dan font */
-body {
-  margin: 0;
-  font-family: 'Reem Kufi Fun', sans-serif;
-  background: #f5fff5;
-  color: #003300;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SDI Ulumiyah Al-Makruf</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="logo-container">
+      <img src="assets/logo.png" alt="Logo SDI" class="logo" />
+      <h1 class="title">SDI Ulumiyah Al-Makruf</h1>
+    </div>
+    <nav class="nav">
+      <a href="#">Beranda</a>
+      <a href="#">Tentang Kami</a>
+      <a href="#">E-learning</a>
+      <a href="#">Hasil Belajar</a>
+      <a href="#">Galeri</a>
+      <a href="#">Kontak</a>
+    </nav>
+  </header>
 
-a {
-  text-decoration: none;
-}
+  <section class="hero">
+    <h2>Selamat Datang di SDI Ulumiyah Al-Makruf</h2>
+    <p>Membangun generasi Qurani, cerdas, dan berakhlakul karimah</p>
+  </section>
 
-/* Header dan Logo */
-.header {
-  background-color: #007f5f;
-  padding: 1rem 2rem;
-  color: white;
-}
+  <section class="program">
+    <h3>Program Kegiatan Tahunan</h3>
+    <p>SDI Ulumiyah Al-Makruf telah merancang kegiatan belajar dan keagamaan untuk mendukung tumbuh kembang peserta didik.</p>
+    <a class="program-link" href="https://drive.google.com/your-link-program" target="_blank">📄 Unduh Program Kegiatan 1 Tahun</a>
+  </section>
 
-.logo-container {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-}
+  <section class="slider">
+    <img src="assets/img1.png" alt="Foto 1" style="opacity:1;">
+    <img src="assets/img2.png" alt="Foto 2">
+    <img src="assets/img3.png" alt="Foto 3">
+  </section>
 
-.logo {
-  height: 60px;
-}
+  <footer class="footer">
+    <p>&copy; 2025 SDI Ulumiyah Al-Makruf. All rights reserved.</p>
+  </footer>
 
-.title {
-  font-size: 1.8rem;
-  font-weight: bold;
-}
-
-/* Navigasi */
-.nav {
-  display: flex;
-  gap: 1.2rem;
-  margin-top: 1rem;
-  flex-wrap: wrap;
-}
-
-.nav a {
-  color: white;
-  font-weight: bold;
-  transition: color 0.3s ease;
-}
-
-.nav a:hover {
-  color: #ffcc00;
-}
-
-/* Hero */
-.hero {
-  background: repeating-linear-gradient(
-    45deg,
-    #e9ffe9,
-    #e9ffe9 20px,
-    #ffffff 20px,
-    #ffffff 40px
-  );
-  padding: 3rem 2rem;
-  text-align: center;
-}
-
-.hero h2 {
-  font-size: 2rem;
-  color: #006644;
-}
-
-.hero p {
-  font-size: 1.1rem;
-  color: #444;
-  margin-top: 0.5rem;
-}
-
-/* Program Kegiatan */
-.program {
-  padding: 2rem;
-  text-align: center;
-}
-
-.program-link {
-  display: inline-block;
-  margin-top: 1rem;
-  background-color: #007f5f;
-  color: white;
-  padding: 0.7rem 1.5rem;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: background 0.3s;
-}
-
-.program-link:hover {
-  background-color: #005f44;
-}
-
-/* Slider */
-.slider {
-  display: flex;
-  overflow: hidden;
-  height: 300px;
-  position: relative;
-  margin: 2rem auto;
-  max-width: 90%;
-  border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
-
-.slider img {
-  width: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-/* Footer */
-.footer {
-  background-color: #004d3d;
-  color: white;
-  text-align: center;
-  padding: 1rem;
-  font-size: 0.9rem;
-}
+  <script src="script.js"></script>
+</body>
+</html>
