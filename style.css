@@ -1,77 +1,65 @@
-/* ========================
-   Islamic Background Pattern Only (non-intrusive)
-   ======================== */
+
 body {
-  background-color: #f7fff7;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f6fdf8;
   background-image:
-    radial-gradient(circle at 10px 10px, rgba(204, 229, 204, 0.4) 1px, transparent 0),
-    radial-gradient(circle at 30px 30px, rgba(204, 229, 204, 0.4) 1px, transparent 0);
-  background-size: 40px 40px;
+    repeating-radial-gradient(circle, rgba(0, 102, 51, 0.05) 0px, transparent 15px),
+    repeating-radial-gradient(circle at 40px 40px, rgba(0, 102, 51, 0.03) 0px, transparent 15px);
 }
 
-/* Footer Restore - Keep previous layout */
-footer {
-  background-color: #004d00;
-  color: #fff;
-  padding: 2rem 1rem;
-  font-size: 0.95rem;
-}
-
-footer .footer-content {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.footer-section {
-  flex: 1 1 200px;
-  min-width: 220px;
-}
-
-.footer-section h4 {
-  font-weight: 600;
-  margin-bottom: 0.8rem;
-  font-size: 1.1rem;
-  border-bottom: 2px solid #fff;
-  display: inline-block;
-  padding-bottom: 0.4rem;
-}
-
-.footer-section p,
-.footer-section a {
-  color: #eee;
-  text-decoration: none;
-  line-height: 1.6;
-}
-
-.footer-section a:hover {
-  text-decoration: underline;
-}
-
-.footer-bottom {
+header {
   text-align: center;
-  border-top: 1px solid #ccc;
-  padding-top: 1rem;
-  font-size: 0.9rem;
-  margin-top: 2rem;
-  color: #ccc;
+  padding: 20px;
+  background-color: #014421;
+  color: white;
 }
 
-.footer-bottom .credit {
-  color: #ffa500;
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
   font-weight: bold;
 }
 
-/* Social Media */
-.footer-socials a {
-  margin-right: 10px;
-  font-size: 1.2rem;
-  color: #ffa500;
+main {
+  padding: 20px;
+  text-align: center;
 }
 
-.footer-socials a:hover {
-  color: #ffcc00;
+h1 {
+  font-family: 'Scheherazade New', serif;
+  font-size: 2.2em;
+  margin: 10px 0;
+}
+
+h2, h3 {
+  font-family: 'Scheherazade New', serif;
+  color: #056d4c;
+}
+
+a {
+  color: #0b784d;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  color: orange;
+}
+
+footer {
+  background-color: #004d26;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: underline;
 }
