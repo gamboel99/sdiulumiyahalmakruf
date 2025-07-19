@@ -1,70 +1,107 @@
 body {
-  font-family: 'Poppins', sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f9f9f9;
+  font-family: 'Poppins', sans-serif;
+  background: url('pattern-islamic.png');
+  background-size: cover;
+  color: #333;
 }
 
-.header {
-  background: linear-gradient(to right, #006400, #228B22);
+header {
+  background-color: #0c7b36;
   color: white;
   padding: 1rem;
   text-align: center;
-  border-bottom: 6px solid orange;
 }
 
-.menu {
+nav ul.menu {
   list-style: none;
-  padding: 0;
   margin: 0;
-  background-color: #006400;
+  padding: 0;
+  background-color: #088242;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.menu > li {
+nav ul.menu li {
   position: relative;
 }
 
-.menu > li > a {
-  display: block;
-  padding: 1rem;
-  color: white;
-  text-decoration: none;
+nav ul.menu > li {
+  margin: 0;
 }
 
-.submenu {
+nav ul.menu li a {
+  display: block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  background-color: #088242;
+}
+
+nav ul.menu li:hover > a {
+  background-color: #f89b1c;
+}
+
+nav ul.submenu {
   display: none;
   position: absolute;
   top: 100%;
-  background-color: #2e8b57;
+  left: 0;
   list-style: none;
-  margin: 0;
-  padding: 0;
-  z-index: 1000;
+  background-color: #0c7b36;
+  min-width: 200px;
+  z-index: 10;
 }
 
-.menu li:hover .submenu {
+nav ul.menu li:hover ul.submenu {
   display: block;
 }
 
-.submenu li a {
-  padding: 0.75rem 1rem;
-  display: block;
-  color: white;
-  text-decoration: none;
+nav ul.submenu li a {
+  padding: 10px;
+  background-color: #0c7b36;
+  border-bottom: 1px solid #f89b1c;
 }
 
-.submenu li a:hover {
-  background-color: orange;
-  color: black;
+nav ul.submenu li a:hover {
+  background-color: #f89b1c;
+  color: white;
 }
 
-.footer {
-  background-color: #222;
+.container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffffd0;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+footer {
+  background-color: #0c7b36;
   color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
   font-size: 0.9rem;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-section {
+  flex: 1 1 200px;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 1rem;
+  border-top: 1px solid #f89b1c;
+  padding-top: 1rem;
+  font-style: italic;
 }
