@@ -1,80 +1,126 @@
-/* style.css */
-body {
-  font-family: 'Baloo 2', sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #ffffff;
-  background-image: radial-gradient(circle, #dfeee5 1px, transparent 1px),
-                    radial-gradient(circle, #dfeee5 1px, transparent 1px);
-  background-size: 40px 40px;
-  background-position: 0 0, 20px 20px;
-}
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SDI Ulumiyah Al-Makruf</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
 
-header {
-  background-color: #008000;
-  color: white;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 8px solid orange;
-}
+<header>
+  <div class="logo">SDI Ulumiyah Al-Makruf</div>
+  <nav>
+    <ul class="main-menu">
+      <li><a href="index.html">Beranda</a></li>
 
-nav ul {
-  list-style: none;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  background-color: #006400;
-}
+      <li class="has-sub">
+        <a href="#">Profil</a>
+        <ul class="submenu">
+          <li><a href="profil.html">Profil Sekolah</a></li>
+          <li><a href="visi-misi.html">Visi & Misi</a></li>
+          <li><a href="struktur-organisasi.html">Struktur Organisasi</a></li>
+        </ul>
+      </li>
 
-nav ul li {
-  margin: 0 10px;
-}
+      <li><a href="tentang.html">Tentang Kami</a></li>
 
-nav ul li a {
-  color: orange;
-  text-decoration: none;
-  padding: 10px;
-  transition: background-color 0.3s ease;
-}
+      <li class="has-sub">
+        <a href="#">Materi Pembelajaran</a>
+        <ul class="submenu">
+          <li><a href="rpp.html">RPP</a></li>
+          <li><a href="atp.html">ATP</a></li>
+        </ul>
+      </li>
 
-nav ul li a:hover {
-  background-color: #ffb84d;
-  color: #006400;
-  border-radius: 5px;
-}
+      <li class="has-sub">
+        <a href="#">PPDB</a>
+        <ul class="submenu">
+          <li><a href="biaya.html">Biaya</a></li>
+          <li><a href="diskon.html">Diskon</a></li>
+          <li><a href="formulir.html">Formulir</a></li>
+          <li><a href="mutasi.html">Mutasi</a></li>
+          <li><a href="syarat.html">Syarat</a></li>
+        </ul>
+      </li>
 
-.sambutan {
-  padding: 20px;
-  background-color: white;
-  color: #222;
-  text-align: center;
-}
+      <li class="has-sub">
+        <a href="#">Pojok</a>
+        <ul class="submenu">
+          <li><a href="pojok-siswa.html">Siswa</a></li>
+          <li><a href="pojok-walimurid.html">Wali Murid</a></li>
+        </ul>
+      </li>
 
-footer {
-  background-color: #004d00;
-  color: white;
-  padding: 30px 20px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 20px;
-}
+      <li class="has-sub">
+        <a href="#">Link</a>
+        <ul class="submenu">
+          <li><a href="kemendikdasmen.html">Kemendikdasmen</a></li>
+          <li><a href="kemenag.html">Kemenag</a></li>
+          <li><a href="dapodik.html">Dapodik</a></li>
+        </ul>
+      </li>
 
-.footer-col h3 {
-  color: orange;
-  margin-bottom: 10px;
-  border-bottom: 1px dotted #ccc;
-  padding-bottom: 5px;
-}
+      <li class="has-sub">
+        <a href="#">Komite</a>
+        <ul class="submenu">
+          <li><a href="program-komite.html">Program</a></li>
+        </ul>
+      </li>
 
-.footer-col p {
-  margin: 5px 0;
-  font-size: 14px;
-}
+      <li class="has-sub">
+        <a href="#">Hasil Belajar</a>
+        <ul class="submenu">
+          <li><a href="eraport.html">E-Raport</a></li>
+          <li><a href="evaluasi.html">Evaluasi</a></li>
+          <li><a href="materi-ujian.html">Materi Ujian</a></li>
+          <li><a href="uts.html">UTS</a></li>
+          <li><a href="uas.html">UAS</a></li>
+          <li><a href="ujian-online.html">Ujian Online</a></li>
+        </ul>
+      </li>
 
-.footer-bottom {
-  grid-column: 1 / -1;
-  text-align: center;
-  margin-top: 20px;
-  font-size: 13px;
-  color: #ccc;
-}
+      <li class="has-sub">
+        <a href="#">Galeri</a>
+        <ul class="submenu">
+          <li><a href="galeri-kbm.html">Kegiatan Belajar Mengajar</a></li>
+          <li><a href="galeri-sekolah.html">Kegiatan Sekolah</a></li>
+        </ul>
+      </li>
+
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="container">
+  <h1>Selamat Datang di Website Resmi SDI Ulumiyah Al-Makruf</h1>
+  <p>
+    Website ini merupakan media informasi resmi bagi siswa, orang tua, dan masyarakat umum mengenai kegiatan, program, dan layanan pendidikan di SDI Ulumiyah Al-Makruf.
+  </p>
+</main>
+
+<footer>
+  <div class="footer-container">
+    <div class="footer-section">
+      <h4>Alamat</h4>
+      <p>Jl. Pendidikan No. 88, Keling, Kediri</p>
+    </div>
+    <div class="footer-section">
+      <h4>Kontak</h4>
+      <p>Telepon: (0354) 123456</p>
+      <p>Email: info@sdialmakruf.sch.id</p>
+      <p>Website: www.sdialmakruf.sch.id</p>
+    </div>
+    <div class="footer-section">
+      <h4>Media Sosial</h4>
+      <p>Facebook | Instagram | YouTube</p>
+    </div>
+    <div class="footer-section developer">
+      <p>Developed by <strong>CV. Mitra Utama Consultindo</strong></p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
