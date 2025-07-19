@@ -6,11 +6,29 @@ body {
 }
 
 header {
-  background: url('../assets/images/header-pattern.png') repeat,
-              linear-gradient(to right, #4CAF50, #FFA500);
+  background: linear-gradient(to right, #4CAF50, #FF9800);
   color: white;
-  padding: 20px 30px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+  padding: 20px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255,255,255,0.1) 1px, transparent 0);
+  background-size: 25px 25px;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+header .container {
+  position: relative;
+  z-index: 1;
 }
 
 .header-inner {
@@ -51,11 +69,17 @@ nav ul li a:hover {
 }
 
 main {
-  background: url('../assets/images/content-pattern.png') repeat;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 60px 30px;
-  min-height: 400px;
+  background: repeating-linear-gradient(
+    45deg,
+    #f9f9f9,
+    #f9f9f9 10px,
+    #eee 10px,
+    #eee 20px
+  );
+  padding: 40px 0;
+  position: relative;
 }
+
 
 .main-overlay {
   background-color: rgba(255,255,255,0.85);
@@ -68,11 +92,9 @@ main {
 }
 
 footer {
-  background-color: #222;
-  color: white;
-  padding: 30px;
-  font-size: 14px;
-  margin-top: 40px;
+  background: linear-gradient(to right, #222, #333);
+  color: #fff;
+  padding: 30px 0;
 }
 
 .footer-content {
