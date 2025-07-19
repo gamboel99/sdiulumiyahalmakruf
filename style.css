@@ -1,36 +1,65 @@
-body {
-  font-family: 'Poppins', sans-serif;
+/* Reset dasar */
+* {
   margin: 0;
   padding: 0;
-  background-image: url('img/pattern-islamic.png'); /* ganti sesuai file Anda */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-image: url('img/pattern-islamic.png'); /* Ganti sesuai file Anda */
   background-repeat: repeat;
   background-size: contain;
+  color: #333;
+  line-height: 1.6;
 }
 
 /* Container Selamat Datang */
 .hero-container {
-  text-align: center;
-  padding: 60px 20px;
   background-color: rgba(255, 255, 255, 0.95);
-  margin: 30px auto;
-  border-radius: 12px;
   max-width: 960px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  margin: 40px auto;
+  padding: 60px 30px;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .welcome-box h1 {
-  color: #2f6934; /* hijau NU */
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+  color: #2f6934; /* Hijau NU menyala */
+  font-size: 2.6rem;
+  margin-bottom: 10px;
 }
+
 .welcome-box h2 {
-  color: #e67600; /* oranye striping */
-  font-size: 1.8rem;
-  margin-bottom: 1rem;
+  color: #e67600; /* Oranye Striping */
+  font-size: 2rem;
+  margin-bottom: 20px;
 }
+
 .welcome-box p {
-  font-size: 1rem;
-  color: #333;
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* Navigasi umum jika ada */
+nav {
+  background-color: #2f6934;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 8px 15px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #e67600;
 }
 
 /* Footer */
@@ -39,22 +68,58 @@ body {
   justify-content: space-around;
   background-color: #2f6934;
   color: #fff;
-  padding: 20px 40px;
+  padding: 30px 40px;
   flex-wrap: wrap;
+  border-top: 5px solid #e67600;
 }
 
 .footer-section {
-  flex: 1 1 220px;
-  margin: 10px;
+  flex: 1 1 240px;
+  margin: 15px;
 }
 
 .footer-section h4 {
+  font-size: 1.2rem;
   color: #e67600;
-  font-size: 1.1rem;
-  margin-bottom: 8px;
+  margin-bottom: 12px;
 }
 
 .footer-section p {
-  font-size: 0.9rem;
-  margin: 4px 0;
+  font-size: 0.95rem;
+  margin-bottom: 6px;
+}
+
+/* Untuk membuat link sosial media */
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  color: #e67600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .site-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-section {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .hero-container {
+    padding: 40px 20px;
+  }
+
+  .welcome-box h1 {
+    font-size: 2rem;
+  }
+
+  .welcome-box h2 {
+    font-size: 1.5rem;
+  }
 }
