@@ -8,6 +8,55 @@ body {
   color: #333;
 }
 
+.site-header {
+  background-color: #fefce8;
+  padding: 15px 20px;
+  border-bottom: 4px solid #f59e0b;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  text-align: left;
+}
+
+.school-logo {
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
+}
+
+.school-title h1 {
+  margin: 0;
+  font-size: 1.8em;
+  color: #14532d;
+  font-weight: 700;
+}
+
+.school-title p {
+  margin: 4px 0 0;
+  font-size: 1em;
+  color: #b45309;
+  font-style: italic;
+}
+
+/* Responsive Header */
+@media (max-width: 600px) {
+  .header-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .school-logo {
+    margin-bottom: 10px;
+  }
+}
+
 a {
   text-decoration: none;
   color: inherit;
