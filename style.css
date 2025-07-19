@@ -1,65 +1,109 @@
+/* style.css */
 
 body {
+  font-family: 'Baloo 2', cursive;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background-color: #f6fdf8;
-  background-image:
-    repeating-radial-gradient(circle, rgba(0, 102, 51, 0.05) 0px, transparent 15px),
-    repeating-radial-gradient(circle at 40px 40px, rgba(0, 102, 51, 0.03) 0px, transparent 15px);
+  background-color: #f9fdf9;
+  background-image: url('pattern-islamic.png'); /* Ganti dengan motif islami transparan */
+  background-size: contain;
+  background-repeat: repeat;
+  color: #222;
 }
 
 header {
-  text-align: center;
-  padding: 20px;
-  background-color: #014421;
+  background-color: #006400;
   color: white;
+  padding: 10px;
+  text-align: center;
 }
 
-nav {
-  margin-top: 10px;
+header img {
+  height: 60px;
+  margin-bottom: 10px;
 }
 
 nav a {
-  color: white;
-  margin: 0 10px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-main {
-  padding: 20px;
-  text-align: center;
-}
-
-h1 {
-  font-family: 'Scheherazade New', serif;
-  font-size: 2.2em;
-  margin: 10px 0;
-}
-
-h2, h3 {
-  font-family: 'Scheherazade New', serif;
-  color: #056d4c;
-}
-
-a {
-  color: #0b784d;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-a:hover {
   color: orange;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.welcome {
+  text-align: center;
+  padding: 30px;
+  background-color: #fff9f0;
+  border-bottom: 2px dashed #ffa500;
+}
+
+.program {
+  padding: 20px;
+  background-color: #f0fff5;
+}
+
+.download-link {
+  display: inline-block;
+  background-color: orange;
+  color: white;
+  padding: 10px 20px;
+  margin-top: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.download-link:hover {
+  background-color: darkorange;
+}
+
+.slider {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #fffef8;
+}
+
+.slider img {
+  width: 100px;
+  border: 4px solid #ffcc00;
+  border-radius: 12px;
+  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
 }
 
 footer {
-  background-color: #004d26;
+  background-color: #004d00;
   color: white;
-  text-align: center;
   padding: 20px;
+  font-size: 14px;
 }
 
-footer a {
-  color: #fff;
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.footer-info, .footer-social, .footer-dev {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-social a {
+  color: #ffa500;
+  text-decoration: none;
+}
+
+.footer-social a:hover {
   text-decoration: underline;
+}
+
+.copyright {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 12px;
 }
