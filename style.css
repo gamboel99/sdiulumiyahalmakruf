@@ -1,113 +1,130 @@
-/* style.css */
+/* === RESET & DASAR === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Baloo 2', cursive;
-  margin: 0;
-  background-color: #f9fdf9;
-  background-image: url('pattern-islamic.png'); /* Ganti dengan motif islami transparan */
-  background-size: contain;
-  background-repeat: repeat;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9f9f9;
   color: #222;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #006400;
-  color: white;
-  padding: 10px;
-  text-align: center;
-}
-
-header img {
-  height: 60px;
-  margin-bottom: 10px;
-}
-
-nav a {
-  color: orange;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-.welcome {
-  text-align: center;
-  padding: 30px;
-  background-color: #fff9f0;
-  border-bottom: 2px dashed #ffa500;
-}
-
-.program {
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
   padding: 20px;
-  background-color: #f0fff5;
 }
 
-.download-link {
-  display: inline-block;
-  background-color: orange;
+/* === HEADER === */
+header {
+  background: linear-gradient(to right, #007f3f, #009f4d);
   color: white;
+  padding: 40px 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: repeating-linear-gradient(
+    45deg,
+    #ffa500,
+    #ffa500 5px,
+    transparent 5px,
+    transparent 10px
+  );
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-family: 'Scheherazade New', serif;
+}
+
+header p {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+/* === NAVIGASI === */
+nav {
+  background-color: #006633;
   padding: 10px 20px;
-  margin-top: 10px;
-  text-decoration: none;
-  border-radius: 5px;
 }
 
-.download-link:hover {
-  background-color: darkorange;
-}
-
-.slider {
+nav ul {
   display: flex;
   justify-content: center;
-  gap: 10px;
-  padding: 20px;
-  background-color: #fffef8;
-}
-
-.slider img {
-  width: 100px;
-  border: 4px solid #ffcc00;
-  border-radius: 12px;
-  box-shadow: 2px 2px 6px rgba(0,0,0,0.1);
-}
-
-footer {
-  background-color: #004d00;
-  color: white;
-  padding: 20px;
-  font-size: 14px;
-}
-
-.footer-content {
-  display: flex;
+  list-style: none;
   flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 10px;
 }
 
-.footer-info, .footer-social, .footer-dev {
-  flex: 1 1 200px;
-  margin: 10px;
+nav ul li {
+  margin: 0 15px;
 }
 
-.footer-social a {
-  color: #ffa500;
+nav ul li a {
+  color: white;
   text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
 }
 
-.footer-social a:hover {
-  text-decoration: underline;
+nav ul li a:hover {
+  color: #ffa500;
 }
 
-.copyright {
+/* === BERANDA === */
+section.hero {
+  padding: 50px 20px;
+  background: radial-gradient(circle, #ffffff 60%, #e6ffe6);
   text-align: center;
-  margin-top: 10px;
-  font-size: 12px;
+  position: relative;
+  overflow: hidden;
 }
 
+section.hero::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-conic-gradient(
+    from 0deg,
+    #c2f0c2 0deg 10deg,
+    #ffffff 10deg 20deg
+  );
+  opacity: 0.1;
+  z-index: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
+}
+
+.hero-content h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #006633;
+}
+
+.hero-content p {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === FOOTER === */
 footer {
   background-color: #004d00;
   color: white;
@@ -136,7 +153,7 @@ footer {
   padding-bottom: 3px;
 }
 
-.footer-section p, 
+.footer-section p,
 .footer-section a {
   margin: 0;
   color: #fff;
