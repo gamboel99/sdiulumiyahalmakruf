@@ -1,125 +1,169 @@
-/* Reset dasar */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Umum */
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('img/pattern-islamic.png'); /* Ganti sesuai file Anda */
-  background-repeat: repeat;
-  background-size: contain;
+  margin: 0;
+  padding: 0;
+  background: url('pattern-islamic.png') repeat;
+  background-color: #f6f9f4;
   color: #333;
-  line-height: 1.6;
 }
 
-/* Container Selamat Datang */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navigasi */
+.main-nav {
+  background-color: #14532d;
+  border-bottom: 4px solid #f59e0b;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0;
+}
+
+.nav-menu > li {
+  position: relative;
+}
+
+.nav-menu > li > a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.nav-menu > li:hover > a {
+  background-color: #0e3e20;
+}
+
+/* Submenu Dropdown */
+.has-submenu:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  background-color: #f6f9f4;
+  min-width: 200px;
+  border: 1px solid #ccc;
+  z-index: 1000;
+}
+
+.submenu li a {
+  display: block;
+  padding: 10px 15px;
+  color: #14532d;
+  border-bottom: 1px solid #e2e8f0;
+  background-color: white;
+}
+
+.submenu li a:hover {
+  background-color: #fef3c7;
+  color: #b45309;
+}
+
+/* Hero Container Ucapan */
 .hero-container {
-  background-color: rgba(255, 255, 255, 0.95);
-  max-width: 960px;
-  margin: 40px auto;
-  padding: 60px 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('pattern-islamic-light.png') repeat;
+  padding: 60px 20px;
   text-align: center;
 }
 
+.welcome-box {
+  background: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+}
+
 .welcome-box h1 {
-  color: #2f6934; /* Hijau NU menyala */
-  font-size: 2.6rem;
-  margin-bottom: 10px;
+  font-size: 2.5em;
+  margin-bottom: 0.3em;
+  color: #14532d;
 }
 
 .welcome-box h2 {
-  color: #e67600; /* Oranye Striping */
-  font-size: 2rem;
-  margin-bottom: 20px;
+  font-size: 1.8em;
+  color: #f59e0b;
+  margin-bottom: 0.5em;
 }
 
 .welcome-box p {
-  font-size: 1.1rem;
+  font-size: 1.1em;
   color: #444;
-}
-
-/* Navigasi umum jika ada */
-nav {
-  background-color: #2f6934;
-  padding: 10px 20px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  margin: 8px 15px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  color: #e67600;
 }
 
 /* Footer */
 .site-footer {
   display: flex;
-  justify-content: space-around;
-  background-color: #2f6934;
-  color: #fff;
-  padding: 30px 40px;
   flex-wrap: wrap;
-  border-top: 5px solid #e67600;
+  justify-content: space-around;
+  background-color: #14532d;
+  color: white;
+  padding: 40px 20px;
+  border-top: 4px solid #f59e0b;
 }
 
-.footer-section {
-  flex: 1 1 240px;
-  margin: 15px;
+.site-footer .footer-section {
+  flex: 1 1 220px;
+  margin: 10px;
 }
 
-.footer-section h4 {
-  font-size: 1.2rem;
-  color: #e67600;
-  margin-bottom: 12px;
+.site-footer h4 {
+  margin-bottom: 10px;
+  color: #f59e0b;
 }
 
-.footer-section p {
-  font-size: 0.95rem;
-  margin-bottom: 6px;
+.site-footer a {
+  color: #fff3cd;
 }
 
-/* Untuk membuat link sosial media */
-.footer-section a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-section a:hover {
-  color: #e67600;
+.site-footer a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
+  .nav-menu {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-menu > li {
+    width: 100%;
+  }
+
+  .submenu {
+    position: static;
+    border: none;
+    box-shadow: none;
+  }
+
+  .submenu li a {
+    padding-left: 30px;
+  }
+
   .site-footer {
     flex-direction: column;
     align-items: center;
   }
 
   .footer-section {
-    margin-bottom: 20px;
     text-align: center;
-  }
-
-  .hero-container {
-    padding: 40px 20px;
-  }
-
-  .welcome-box h1 {
-    font-size: 2rem;
-  }
-
-  .welcome-box h2 {
-    font-size: 1.5rem;
   }
 }
