@@ -1,49 +1,77 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>SDI Ulumiyah Al-Makruf</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun&display=swap" rel="stylesheet">
-</head>
-<body>
-  <header class="header">
-    <div class="logo-container">
-      <img src="assets/logo.png" alt="Logo SDI" class="logo" />
-      <h1 class="title">SDI Ulumiyah Al-Makruf</h1>
-    </div>
-    <nav class="nav">
-      <a href="#">Beranda</a>
-      <a href="#">Tentang Kami</a>
-      <a href="#">E-learning</a>
-      <a href="#">Hasil Belajar</a>
-      <a href="#">Galeri</a>
-      <a href="#">Kontak</a>
-    </nav>
-  </header>
+/* ========================
+   Islamic Background Pattern Only (non-intrusive)
+   ======================== */
+body {
+  background-color: #f7fff7;
+  background-image:
+    radial-gradient(circle at 10px 10px, rgba(204, 229, 204, 0.4) 1px, transparent 0),
+    radial-gradient(circle at 30px 30px, rgba(204, 229, 204, 0.4) 1px, transparent 0);
+  background-size: 40px 40px;
+}
 
-  <section class="hero">
-    <h2>Selamat Datang di SDI Ulumiyah Al-Makruf</h2>
-    <p>Membangun generasi Qurani, cerdas, dan berakhlakul karimah</p>
-  </section>
+/* Footer Restore - Keep previous layout */
+footer {
+  background-color: #004d00;
+  color: #fff;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+}
 
-  <section class="program">
-    <h3>Program Kegiatan Tahunan</h3>
-    <p>SDI Ulumiyah Al-Makruf telah merancang kegiatan belajar dan keagamaan untuk mendukung tumbuh kembang peserta didik.</p>
-    <a class="program-link" href="https://drive.google.com/your-link-program" target="_blank">📄 Unduh Program Kegiatan 1 Tahun</a>
-  </section>
+footer .footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-  <section class="slider">
-    <img src="assets/img1.png" alt="Foto 1" style="opacity:1;">
-    <img src="assets/img2.png" alt="Foto 2">
-    <img src="assets/img3.png" alt="Foto 3">
-  </section>
+.footer-section {
+  flex: 1 1 200px;
+  min-width: 220px;
+}
 
-  <footer class="footer">
-    <p>&copy; 2025 SDI Ulumiyah Al-Makruf. All rights reserved.</p>
-  </footer>
+.footer-section h4 {
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  border-bottom: 2px solid #fff;
+  display: inline-block;
+  padding-bottom: 0.4rem;
+}
 
-  <script src="script.js"></script>
-</body>
-</html>
+.footer-section p,
+.footer-section a {
+  color: #eee;
+  text-decoration: none;
+  line-height: 1.6;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+  font-size: 0.9rem;
+  margin-top: 2rem;
+  color: #ccc;
+}
+
+.footer-bottom .credit {
+  color: #ffa500;
+  font-weight: bold;
+}
+
+/* Social Media */
+.footer-socials a {
+  margin-right: 10px;
+  font-size: 1.2rem;
+  color: #ffa500;
+}
+
+.footer-socials a:hover {
+  color: #ffcc00;
+}
