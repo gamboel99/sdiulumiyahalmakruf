@@ -1,29 +1,30 @@
 body {
   font-family: 'Poppins', sans-serif;
-  background-image: url('img/pattern-islamic.png');
-  background-repeat: repeat;
-  background-size: contain;
   margin: 0;
   padding: 0;
+  background-image: url('img/pattern-islamic.png'); /* ganti sesuai file Anda */
+  background-repeat: repeat;
+  background-size: contain;
 }
 
+/* Container Selamat Datang */
 .hero-container {
   text-align: center;
   padding: 60px 20px;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin: 20px auto;
+  background-color: rgba(255, 255, 255, 0.95);
+  margin: 30px auto;
   border-radius: 12px;
   max-width: 960px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
 .welcome-box h1 {
-  color: #2f6934;
+  color: #2f6934; /* hijau NU */
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
 }
 .welcome-box h2 {
-  color: #e67600;
+  color: #e67600; /* oranye striping */
   font-size: 1.8rem;
   margin-bottom: 1rem;
 }
@@ -32,6 +33,7 @@ body {
   color: #333;
 }
 
+/* Footer */
 .site-footer {
   display: flex;
   justify-content: space-around;
@@ -42,14 +44,16 @@ body {
 }
 
 .footer-section {
-  flex: 1 1 200px;
+  flex: 1 1 220px;
   margin: 10px;
 }
+
 .footer-section h4 {
   color: #e67600;
   font-size: 1.1rem;
   margin-bottom: 8px;
 }
+
 .footer-section p {
   font-size: 0.9rem;
   margin: 4px 0;
